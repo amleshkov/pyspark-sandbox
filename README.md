@@ -3,7 +3,7 @@
 
 ### Как собрать и запустить
 
-1. Скачать Dokerfile
+1. Скачать Dockerfile
 2. Собрать контейнер `docker build . -t pyspark`
 3. Запустить контейнер `docker run -d -p 8888:8888 pyspark`
 4. Открыть в браузере [http://locahost:8888](http://localhost:8888)
