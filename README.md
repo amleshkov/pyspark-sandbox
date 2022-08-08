@@ -5,7 +5,8 @@
 
 1. Скачать Dockerfile
 2. Собрать контейнер `docker build . -t pyspark`
-3. Запустить контейнер `docker run -d -p 8888:8888 pyspark`
+3. Запустить контейнер `docker run -d -p 8888:8888 -v /workdir:/home/spark pyspark`
+где `/workdir` локальная директория для сохранения ноутбуков.
 4. Открыть в браузере [http://locahost:8888](http://localhost:8888)
 5. Пример инициализации сессии:
 ```
