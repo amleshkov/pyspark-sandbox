@@ -2,7 +2,7 @@ FROM debian:11
 
 RUN apt-get update
 RUN apt-get install -y python3-pip openjdk-11-jre
-RUN pip3 install jupyter pyspark
+RUN pip3 install jupyter pyspark pandas sklearn seaborn scipy
 
 RUN adduser --disabled-password --gecos '' spark
 USER spark
